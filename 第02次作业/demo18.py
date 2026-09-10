@@ -6,8 +6,8 @@ def test01():
     x = torch.tensor([10, 20], requires_grad=True, dtype=torch.float64)
 
     # Can't call numpy() on Tensor that requires grad. Use tensor.detach().numpy() instead.
-    # print(x.numpy())        # 错误
-    print(x.detach().numpy())  # 正确
+    print(x.numpy())        # 错误
+    # print(x.detach().numpy())  # 正确
 
 
 # 2. detach 前后张量共享内存
